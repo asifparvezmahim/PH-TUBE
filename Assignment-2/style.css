@@ -1,0 +1,166 @@
+header{
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.srt_btn{
+    border: none;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.blg_btn{
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cat_btn{
+    margin-top: 25px;
+    display: flex;
+    padding-left: 40%;
+    gap:20px;
+}
+
+.cat_btns{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box{
+    width: 400px;
+    height: 450px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#video_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    /* flex-wrap: wrap;
+    gap: 20px; */
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.box_img{
+    width: 100%;
+    height: 200px;
+}
+
+.author_img{
+    width: 10%;
+    height: 10%;
+    padding-top: 15px;
+    border-radius: 5000px;
+}
+
+.title_auth{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box_title{
+    margin-top: 15px;
+}
+
+.auth_name_verification{
+    display: flex;
+    gap: 10px;
+}
+
+.auth_name{
+    padding-left: 50px;
+}
+
+.view{
+    display: flex;
+    padding-left: 50px;
+}
+.views{
+    padding-left: 0;
+}
+
+.notice_container{
+    position:relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+    margin-left: 80%;
+}
+
+.blg_btn a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 480px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 10px;
+    }
+
+    .logo{
+        width: 80%;
+    }
+
+    .cat_btn{
+        padding-left: 10%;
+        gap: 10px;
+    }
+
+    #video_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 150px;
+        margin-top: 30px;
+        padding-left: 0px;
+        
+    }
+
+    .box_img{
+        width: 100%;
+        height: ;
+    }
+
+    .box{
+        width: 200px;
+        height: 250px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .notice_container{
+        margin-left: 10%;
+    }
+
+    .author_img{
+        width: 25%;
+    }
+
+    .auth_name_verification{
+       flex-direction: column;  
+       gap: 0;  
+    }
+
+    .varification{
+       padding-left: 55px;    
+    }
+
+    .views{
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
